@@ -3,12 +3,12 @@ package company;
 
 public class Department {
     private final String name;
-    private final String departmentld;
+    private final String departmentid;
     private int budget;
     
-    public Department(String name,String departmentld,int budget) {
+    public Department(String name,String departmentid,int budget) {
         this.name=name;
-        this.departmentld=departmentld;
+        this.departmentid=departmentid;
         this.budget=budget;
     } 
     public void meeting() {

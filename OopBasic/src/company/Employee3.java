@@ -1,12 +1,12 @@
 package company;
 
-public class Employee {
+public class Employee3 {
 protected final String name;
 private final String department;
 private final String position;
 private final int employeeid;
 
-public Employee(String name,String department,String position,int employeeid) {
+public Employee3(String name,String department,String position,int employeeid) {
     this.name=name;
     this.department=department;
     this.position=position;
