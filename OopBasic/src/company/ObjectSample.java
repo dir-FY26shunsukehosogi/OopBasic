@@ -3,17 +3,22 @@ package company;
 public class ObjectSample {
 
     public static void main(String[] args) {
-        var employee =new Employee("鈴木","営業部","課長",100);
+        
+        var department=new Department("営業部","xx",1000000);
+        var employee =new Employee("鈴木",department,"課長",100);
         
         employee.report(1);
         employee.report(2);
+        Employee.joinMeeting();
+        
         
         System.out.println("");
         
-        var engineer=new Employee("田中","開発部","一般社員",88);
+        VarHandle devDepartmentHandle=new Department("開発部", "yy",0);
+        var engineer=new Employee("田中",devDepartment,"一般社員",88);
         
         engineer.report(1);
-        
+        engineer.joinMeeting();
 
     }
 
